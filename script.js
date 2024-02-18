@@ -21,7 +21,8 @@ function createBubble() {
     
     setTimeout(() => {
         document.body.removeChild(bubble);
-    }, 4000);
+    }, 10000);
 }
 
-setInterval(createBubble, 10);
+setInterval(createBubble, 50);
+
