@@ -3,8 +3,8 @@ function createBubble() {
     const bubble = document.createElement('div');
     bubble.className = 'bubble';
     bubble.style.left = Math.random() * 100 + 'vw'; // Random horizontal position
-    bubble.style.width = bubble.style.height = '100px'; // Random size
-    bubble.style.bottom = '-200px'; // Random vertical position
+    bubble.style.width = bubble.style.height = Math.random() * 100 + 'px'; // Random size
+    bubble.style.bottom = '-100px'; // Random vertical position
     const span = document.createElement('span');
     bubble.appendChild(span);
     const span1 = document.createElement('span');
@@ -24,4 +24,4 @@ function createBubble() {
     }, 4000);
 }
 
-setInterval(createBubble, 50);
+setInterval(createBubble, 10);
