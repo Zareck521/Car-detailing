@@ -4,7 +4,8 @@ body {
     flex-direction: column;
     min-height: 100vh;
     background-color: #06102b;
-    overflow: hidden;
+    overflow: auto;
+    padding-bottom: 8000px;
 }
 
 body > *:not(footer) {
@@ -48,7 +49,7 @@ img {
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    animation: float 15s ease-in-out infinite, shrink 10s ease-in-out infinite;
+    animation: float 20s ease-in-out infinite, shrink 90s ease-in-out infinite;
     box-shadow: inset 0 0 25px rgba(255, 255, 255, 0.25);
     z-index: -1;
 }
@@ -58,8 +59,8 @@ img {
 }
 
 #bubble-container {
-    /* position: absolute; */
-    /* top: 50%; */
+    /* position: absolute;
+    bottom: 0; */
     width: 100%;
     pointer-events: none;
 }
@@ -125,8 +126,18 @@ img {
 }
 
 @keyframes float {
-    0% { bottom: -1000; }
-    100% { bottom: 500%; }
+    0% {
+        transform: translateX(0) scale(0);
+        opacity: 1;
+    }
+    50% {
+        transform: translateX(-10px) scale(1);
+    }
+    100% {
+        top: -200px; /* Change this to move the bubbles up */
+        transform: translateX(0) scale(0);
+        opacity: 1;
+    }
 }
 
 @keyframes shrink {

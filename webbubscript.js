@@ -12,10 +12,11 @@ function createBubble() {
     bubble.style.width = bubble.style.height = Math.random() * 100 + 'px'; // Random size
     const footerHeight = document.querySelector('footer').offsetHeight;
     const viewportHeight = window.innerHeight;
-    const bubbleStartPos = viewportHeight - footerHeight;
+    const bubbleStartPos = document.body.scrollHeight - footerHeight;
 
-    bubble.style.bottom = -footerHeight + 'px'; // Random vertical position
-    
+    // bubble.style.bottom = bubbleStartPos + 'px'; // Random vertical position
+    bubble.style.top = bubbleStartPos + 'px';
+
     bubbleContainer.appendChild(bubble);
     const span = document.createElement('span');
     bubble.appendChild(span);
@@ -32,8 +33,17 @@ function createBubble() {
     
     setTimeout(() => {
         bubbleContainer.removeChild(bubble);
-    }, 20000);
+    }, 40000);
 }
 
-setInterval(createBubble, 50);
+setInterval(createBubble, 30);
 
+// window.addEventListener('scroll', updateBubblePosition);
+
+// function updateBubblePosition() {
+//     const bubbles = document.querySelectorAll('.bubble');
+//     const scrollPos = window.scrollY;
+//     bubbles.forEach(bubble => {
+//         bubble.style.bottom = (parseInt(bubble.style.bottom) + scrollPos) + 'px';
+//     });
+// }
