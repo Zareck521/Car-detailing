@@ -1,10 +1,22 @@
 
+const footer = document.querySelector('footer');
+const bubbleContainer = document.getElementById('bubble-container');
+
 function createBubble() {
     const bubble = document.createElement('div');
     bubble.className = 'bubble';
-    bubble.style.left = Math.random() * 100 + 'vw'; // Random horizontal position
+    if (window.innerWidth < 768) {
+        bubble.classList.add('mobile');
+    }
+    bubble.style.left = Math.random() * bubbleContainer.offsetWidth + 'px'; // Random horizontal position
     bubble.style.width = bubble.style.height = Math.random() * 100 + 'px'; // Random size
-    bubble.style.bottom = '-100px'; // Random vertical position
+    const footerHeight = document.querySelector('footer').offsetHeight;
+    const viewportHeight = window.innerHeight;
+    const bubbleStartPos = viewportHeight - footerHeight;
+
+    bubble.style.bottom = -footerHeight + 'px'; // Random vertical position
+    
+    bubbleContainer.appendChild(bubble);
     const span = document.createElement('span');
     bubble.appendChild(span);
     const span1 = document.createElement('span');
@@ -17,11 +29,10 @@ function createBubble() {
     bubble.appendChild(span4);
     const span5 = document.createElement('span');
     bubble.appendChild(span5);
-    document.body.appendChild(bubble);
     
     setTimeout(() => {
-        document.body.removeChild(bubble);
-    }, 10000);
+        bubbleContainer.removeChild(bubble);
+    }, 20000);
 }
 
 setInterval(createBubble, 50);
