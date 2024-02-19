@@ -3,7 +3,7 @@
         position: absolute;
         width: 5%;
         height: 5%;
-        background-color: #ffffff;
+        background-color: #00f7ff;
         box-shadow: inset 0 0 25px rgba(255, 255, 255, 0.25);
         border-radius: 50%;
         animation: shrink 4s ease-in-out forwards;
