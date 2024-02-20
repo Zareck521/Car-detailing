@@ -58,13 +58,19 @@ img {
 }
 
 .section {
-    background-color: rgba(41, 81, 41, 0.5);
-    border-radius: 25px; /* Rounded corners to make it look like a bubble */
+    background-color: rgba(0, 135, 76, 0.148);
+    border-radius: 51% 49% 48% 52% / 62% 44% 56% 38%;
     padding: 20px; /* Space around the content */
     margin: 20px auto; /* Center the section with some space around it */
-    max-width: 600px; /* Maximum width to keep the content line length comfortable */
+    max-width: 700px; /* Maximum width to keep the content line length comfortable */
     box-sizing: border-box; /* Include padding and border in the element's total width and height */
     margin-top: 0;
+    width: 200%;
+    height: 100%;
+    font-size: 16px;
     font-family: sans-serif;
-    color: rgb(0, 199, 213);
+    color: rgb(255, 255, 255);
+    box-shadow: inset 25px 25px 25px rgba(37, 211, 254, 0.508);
+    border: 2px solid #3d93ff;
 }
+
