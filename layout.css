@@ -55,15 +55,13 @@ img {
 }
 
 .trucknobkgd {
-    position: absolute;
     width: 50vw;
     height: auto;
     position: absolute;
-    top: 250%;
+    top: 5%;
     left: 50%;
     transform: translateX(-50%);
     z-index: 0;    
-    position: relative;
 }
 
 @media (max-width: 768px) { 
@@ -72,14 +70,15 @@ img {
     }
 }
 
-/* h1 {
+h1 {
     color: #ff00aa; 
-    position: absolute; 
-    top: 200px; 
-    left: 900px; 
-    line-height: 0.5; 
-    font-size: 80px;
-} */
+    position: relative; 
+    top: 20vh; 
+    left: 55vw; 
+    line-height: 0.6; 
+    font-size: 120px;
+    text-shadow: -1px 0 #000000, 0 3px #000000, 3px 0 #000000, 0 -1px #000000;
+}
 
 .section img {
     width: 10%;
@@ -117,7 +116,7 @@ img {
 .navbar-brand img {
     max-height: 100%;
     object-fit: contain;
-    width: 20%;
+    width: 25%;
     height: auto;
     border-radius: 50px;
     padding-left: 5px;
@@ -128,12 +127,12 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 1px;
+    height: 60px;
 }
 
-.phone-number {
+.phone-number-container {
     color: rgb(255, 255, 255); 
-    font-size: 15px;
+    font-size: 30px;
     margin-left: 10px;
     font-family: sans-serif;
 }
