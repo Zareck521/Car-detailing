@@ -54,24 +54,24 @@ img {
     height: auto;
 }
 
+.trucknobkgd {
+    position: absolute;
+    width: 50vw;
+    height: auto;
+    position: absolute;
+    top: 250%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 0;    
+    position: relative;
+}
 
+@media (max-width: 768px) { 
+    .trucknobkgd {
+        top: 150px; 
+    }
+}
 
-/* .section {
-    background-color: rgba(0, 135, 76, 0.148);
-    border-radius: 51% 49% 48% 52% / 62% 44% 56% 38%;
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 700px;
-    box-sizing: border-box;
-    margin-top: 0;
-    width: 200%;
-    height: 100%;
-    font-size: 14px;
-    font-family: sans-serif;
-    color: rgb(255, 255, 255);
-    box-shadow: inset 25px 25px 25px rgba(37, 211, 254, 0.508);
-    border: 2px solid #3d93ff;
-} */
 
 .section img {
     width: 10%;
@@ -89,7 +89,21 @@ img {
 .navbar-brand {
     display: flex;
     align-items: center;
+    width: 100%;
     height: auto;
+}
+
+.container-fluid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.logo-container, .phone-number-container {
+    display: flex;
+    align-items: center;
+    padding-right: 15px;
 }
 
 .navbar-brand img {
@@ -104,6 +118,7 @@ img {
 
 .navbar {
     display: flex;
+    justify-content: space-between;
     align-items: center;
     height: 1px;
 }
