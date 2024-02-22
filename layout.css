@@ -30,6 +30,7 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%
+    
 }
 
 footer p {
@@ -71,7 +72,7 @@ img {
     }
 }
 
-h1 {
+.main-title {
     color: #ff00aa; 
     position: relative; 
     top: 20vh; 
@@ -101,9 +102,58 @@ h1 {
     line-height: 1.5;
     letter-spacing: 1px;
     font-family: sans-serif;
-    color: white;
+    color: rgb(196, 187, 196);
     max-width: 800px;
     margin: auto;
+    font-size: 20px;
+}
+
+.coating-services {
+    background-color: #333333c0;
+    border-top: #ff00aa 2px solid;
+    border-bottom: #ff00aa 2px solid;
+    margin-top: 150px;
+    position: relative;
+}
+
+.coating-services img {
+    width: 30%;
+    height: auto;
+    /* position: absolute; */
+    padding-left: 280px
+}
+
+.coating-services h1 {
+    color: #ff00aa; 
+    text-align: center;
+    top: 20vh; 
+    left: 55vw; 
+    font-size: 50px;
+    text-shadow: -1px 0 #000000, 0 3px #000000, 3px 0 #000000, 0 -1px #000000;
+}
+
+.interior {
+    background-color: #333333c0;
+    border-top: #ff00aa 2px solid;
+    border-bottom: #ff00aa 2px solid;
+    margin-top: 150px;
+    position: relative;
+}
+
+.interior img {
+    width: 25%;
+    height: auto;
+    /* position: absolute; */
+    padding-left: 280px
+}
+
+.interior h1 {
+    color: #ff00aa; 
+    text-align: center;
+    top: 20vh; 
+    left: 55vw; 
+    font-size: 50px;
+    text-shadow: -1px 0 #000000, 0 3px #000000, 3px 0 #000000, 0 -1px #000000;
 }
 
 .navbar-brand {
@@ -140,7 +190,7 @@ h1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 5vh;
+    height: 8vh;
 }
 
 .phone-number-container {

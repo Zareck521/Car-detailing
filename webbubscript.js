@@ -37,7 +37,7 @@ if (window.matchMedia("(min-width: 601px)").matches) {
         }, 40000);
     }
 
-    setInterval(createBubble, 1000);
+    setInterval(createBubble, 550);
 }
 
 
