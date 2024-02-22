@@ -10,6 +10,7 @@ body {
     min-height: 100vh;
     background-color: #007d94;
     overflow-x: hidden;
+    overflow-y: scroll;
     /* padding-bottom: 2000px; */
     font-family: 'Arnold', sans-serif;
     margin: 0;
@@ -80,10 +81,20 @@ h1 {
     text-shadow: -1px 0 #000000, 0 3px #000000, 3px 0 #000000, 0 -1px #000000;
 }
 
+.section {
+    background-color: #333333c0;
+    border-top: #ff00aa 2px solid;
+    border-bottom: #ff00aa 2px solid;
+    margin-top: 150px;
+    position: relative;
+}
+
 .section img {
     width: 10%;
     height: auto;
     border-radius: 50px;
+    position: absolute;
+    padding-left: 280px
 }
 
 .section p {
@@ -91,6 +102,8 @@ h1 {
     letter-spacing: 1px;
     font-family: sans-serif;
     color: white;
+    max-width: 800px;
+    margin: auto;
 }
 
 .navbar-brand {
@@ -116,7 +129,7 @@ h1 {
 .navbar-brand img {
     max-height: 100%;
     object-fit: contain;
-    width: 25%;
+    width: 20%;
     height: auto;
     border-radius: 50px;
     padding-left: 5px;
@@ -127,7 +140,7 @@ h1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 60px;
+    height: 5vh;
 }
 
 .phone-number-container {
